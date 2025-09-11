@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./Login.css";
 import LogoFecap from "../assets/logofecap.png";
-import Aguia from "../assets/Aguia.svg";
-import AguiVoando from "../assets/aguiavoando.svg";
+import AguiaVoando from "../assets/aguiavoando.svg";
 
 function Login() {
   const [count, setCount] = useState(0);
@@ -12,16 +11,16 @@ function Login() {
       {/* container */}
       <div className="container">
         {/* retangulo */}
-        <div className="left-side">
-          <img className="aguiaVoandoImg" src={AguiVoando} alt="aguia" />
+        <aside className="left-side">
+          <img className="aguiaVoandoImg" src={AguiaVoando} alt="aguia" />
           <h1 className="lead">L.E.A.D.</h1>
           <p className="siglaLead">
             Liderança, Empatia, Ação, e Desenvolvimento
           </p>
           <p className="siglaLead">Levando pessoas ao próximo nível.</p>
-        </div>
+        </aside>
         {/* background */}
-        <div className="right-side">
+        <main className="right-side">
           <img
             className="backgroundImg"
             src={LogoFecap}
@@ -41,10 +40,15 @@ function Login() {
               <input type="password" placeholder="" />
               <p className="espacamento"></p>
             </div>
-            <a href="#">Esqueci minha senha</a>
-            <button class="login-btn">Login</button>
+            <a href="#" className="forgot-password">
+              Esqueci minha senha
+            </a>
+            <button className="login-btn">Login</button>
           </div>
-        </div>
+          <p className="create-account">
+            Não tem uma conta? <a href="#">Crie uma</a>
+          </p>
+        </main>
       </div>
     </>
   );
