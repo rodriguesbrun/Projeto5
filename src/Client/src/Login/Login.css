@@ -5,6 +5,8 @@
   --green-230: #014130;
   --green-250: #002118;
   --white: #fff;
+  --blue-link: #6868ff;
+  --black: #000;
 }
 
 * {
@@ -16,10 +18,31 @@
 body {
   background-color: var(--green-250);
   font-family: "Montserrat";
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .espacamento {
   margin-bottom: 7px;
+}
+
+/* Animacao de entrada */
+@keyframes slideUp {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .container {
@@ -66,7 +89,7 @@ body {
   width: 880px;
   /* object-fit: contain; */
   align-items: right;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 /* Caixa de login */
@@ -75,14 +98,59 @@ body {
   border: 2px solid var(--green-100);
   border-radius: 15px;
   padding: 30px;
-  width: 800px;
-  height: 700px;
-  color: white;
+  width: 700px;
+  height: 500px;
+  color: var(--white);
   box-shadow: 3px 3px var(--green-230);
   position: absolute;
   gap: 20px;
+  animation: slideUp 0.8s ease;
+  animation-delay: 0s;
 }
 
+/* Botoes de Login */
+.roles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.roles button {
+  border-radius: 0;
+  width: 130px;
+  height: 40px;
+  background: var(--green-200);
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-weight: bold;
+  margin: 0;
+  transition: 0.3s;
+}
+
+/* Primeiro botao */
+.roles button:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Segundo botao */
+.roles button:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.roles button:not(:last-child) {
+  border-right: none;
+}
+
+.roles button:hover {
+  background: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* Labels de email e senha */
 .labels {
   display: flex;
   flex-direction: column;
@@ -104,7 +172,7 @@ label {
   border-radius: 20px;
   border: 1px solid var(--green-50);
   background: transparent;
-  color: white;
+  color: var(--white);
   outline: none;
 }
 
@@ -112,33 +180,41 @@ label {
   color: #bbb;
 }
 
-.roles {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.roles button {
-  border-radius: 15px;
-  width: 100px;
-  height: 40px;
+.forgot-password {
+  position: absolute;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--blue-link);
 }
 
 .login-btn {
-  width: 100%;
+  width: 130px;
   padding: 10px;
-  margin-top: 15px;
   border-radius: 20px;
-  border: 1px solid #38fba0;
+  border: 1px solid var(--green-50);
   background: transparent;
-  color: #38fba0;
+  color: var(--white);
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
 }
 
 .login-btn:hover {
-  background: #38fba0;
-  color: black;
+  background: var(--green-50);
+  color: var(--black);
+}
+
+.create-account {
+  position: absolute;
+  bottom: 30px;
+  font-size: 14px;
+  color: var(--white);
+  animation: slideUp 1s ease;
+}
+
+.create-account a {
+  color: var(--blue-link);
 }
