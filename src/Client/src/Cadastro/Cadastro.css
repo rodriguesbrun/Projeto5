@@ -51,40 +51,11 @@ a:hover {
   height: 100%;
 }
 
-/* Parte da esquerda */
-.left-side {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--white);
-}
-
-.aguiaVoandoImg {
-  width: 500px;
-  margin-top: 80px;
-}
-
-.lead {
-  font-size: 50px;
-  margin: 30px;
-  font-weight: bold;
-  animation: slideUp 1s ease;
-}
-
-.siglaLead {
-  font-size: 24px;
-  font-weight: bold;
-  animation: slideUp 1s ease;
-}
-
-/* Parte da direita */
-.right-side {
+main {
   display: flex;
   flex: 2;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .backgroundImg {
@@ -94,35 +65,26 @@ a:hover {
   opacity: 0.3;
 }
 
-.login-txt {
+.register-txt {
   position: absolute;
   font-size: 40px;
-  top: 145px;
+  top: 70px;
   color: var(--white);
   animation: slideUp 0.8s ease;
 }
 
-/* Caixa de login */
-.login-box {
+.register-box {
   position: relative;
   border: 2px solid var(--green-100);
   border-radius: 15px;
   padding: 30px;
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 650px;
   color: var(--white);
   box-shadow: 3px 3px var(--green-230);
   position: absolute;
   gap: 20px;
   animation: slideUp 0.8s ease;
-}
-
-/* Botoes de Login */
-.roles {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 25px;
 }
 
 .roles button {
@@ -159,7 +121,6 @@ a:hover {
   cursor: pointer;
 }
 
-/* Labels de email e senha */
 .labels {
   display: flex;
   flex-direction: column;
@@ -174,51 +135,25 @@ label {
   margin-bottom: 100px;
 }
 
-.login-box input {
+.register-box input {
   width: 100%;
   padding: 10px;
   margin: 7px 0;
+  font-size: 15px;
   border-radius: 20px;
   border: 1px solid var(--green-50);
   background: transparent;
   color: var(--white);
   outline: none;
-  font-size: 15px;
 }
 
-.login-box input::placeholder {
+.register-box input::placeholder {
   color: #bbb;
   font-size: 15px;
 }
 
-.forgot-password {
-  position: absolute;
-  text-decoration: none;
-  font-size: 14px;
-  color: var(--blue-link);
-}
-
-.login-btn {
-  width: 130px;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid var(--green-50);
-  background: transparent;
-  color: var(--white);
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  position: absolute;
-  bottom: 20px;
-  left: 40%;
-}
-
-.login-btn:hover {
-  background: var(--green-50);
-  color: var(--black);
-}
-
-.create-account {
+/* Faca login */
+.do-login {
   position: absolute;
   bottom: 30px;
   font-size: 14px;
@@ -226,6 +161,20 @@ label {
   animation: slideUp 1.5s ease;
 }
 
-.create-account a {
+.do-login a {
   color: var(--blue-link);
+}
+
+/* Aside da direita */
+aside {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.logo-lead {
+  width: 480px;
+  margin: 50px 0 0 50px;
 }

@@ -26,6 +26,7 @@ function Login() {
             src={LogoFecap}
             alt="backgroundfecap"
           />
+          <h1 className="login-txt">Entrar</h1>
           <div className="login-box">
             <div className="roles">
               <button>Aluno</button>
@@ -37,13 +38,13 @@ function Login() {
               <input type="email" placeholder="Insira seu e-mail" />
               <p className="espacamento"></p>
               <label>Senha</label>
-              <input type="password" placeholder="" />
+              <input type="password" placeholder="Digite sua senha" />
               <p className="espacamento"></p>
             </div>
             <a href="#" className="forgot-password">
               Esqueci minha senha
             </a>
-            <button className="login-btn">Login</button>
+            <button className="login-btn">Entrar</button>
           </div>
           <p className="create-account">
             Não tem uma conta? <a href="#">Crie uma</a>
