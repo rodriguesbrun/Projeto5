@@ -3,7 +3,7 @@ import logoLead from "../assets/logoLEAD.svg";
 import LogoLiderancasEmpaticas from "../assets/logoLE.svg"
 import Menu from "../assets/Menu.png"
 import defaultImage from "../assets/defaultUserImage.svg"
-import homeImage from "../assets/homeImage.svg"
+import homeAnimation from "../assets/homeAnimation.svg"
 function Home() {
     return (
         <>
@@ -32,8 +32,8 @@ function Home() {
                         <p className="buttonText">Meus projetos</p>
                     </button>
                 </div>
-
-                <img src={homeImage} alt="" className="homeImage"/>
+                        <img src={homeAnimation} alt="" className="homeImage"/>
+                
             </main>
         </>
 

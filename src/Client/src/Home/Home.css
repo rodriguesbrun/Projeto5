@@ -9,7 +9,7 @@
     --background-body: #FFFFFF;
     --lead-font-color: #00B090;
     --button-color: #00B090;
-    --button-color-hover: #162e23;
+    --button-color-hover: #176549;
 }
 
 header{
@@ -70,7 +70,7 @@ h1{
 }
 
 p{
-    text-align: center;
+    text-align: justify;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
     font-size: 3vh;
@@ -87,6 +87,11 @@ button{
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+button:hover{
+    background-color: var(--button-color-hover);
+    transition: 0.5s;
 }
 
 .buttonText{
