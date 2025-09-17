@@ -93,7 +93,7 @@ npm install
 npm run start
 ``````
 
-## Observações
+### Observações
 <ul>
   <li>O front-end estará disponível em http://localhost:3000</li>
   <li>O back-end estará rodando em http://localhost:5000</li>
