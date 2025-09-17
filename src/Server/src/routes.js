@@ -35,10 +35,15 @@ r.post('/user', async (req, res) => {
             'select * from Usuario where email_usuario = ? and senha_usuario = ?',
             [email, senha]
         )
+
+        if (rows.length < 1) {
+            return res.status(401).json({ error: 'Usuário ou senha incorretos' })
+        }
+
         res.json(rows)
+
     } catch(err) {
         console.log(err);
-        
         res.status(500).json({ error: 'Erro ao listar usuários' })
     }
 })
