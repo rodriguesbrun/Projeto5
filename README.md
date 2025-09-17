@@ -59,6 +59,46 @@ Não há instalação!
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
 
 ## 💻 Configuração para Desenvolvimento
+### Pré-requisitos
+Antes de começar, certifique-se de ter instalado:
+<ul>
+<li>Node.js (versão recomendada: 18+)</li>
+<li>npm </li>
+<li>Git</li>
+</ul>
+
+### Clonando o repositório
+```bash
+git clone https://github.com/2025-2-MCC2/Projeto5.git
+cd ./Projeto5
+```
+
+### Configurando o Back-end
+````bash
+cd ./src/Server
+npm install
+
+# Inicie o servidor
+npm run dev
+
+````
+
+### Configurando o Front-end
+
+`````bash
+cd ./src/Client
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run start
+``````
+
+## Observações
+<ul>
+  <li>O front-end estará disponível em http://localhost:3000</li>
+  <li>O back-end estará rodando em http://localhost:5000</li>
+  <li>Certifique-se de que as URLs de API estejam corretamente configuradas no front-end para comunicação com o back-end</li>
+</ul>
 
 ## 📋 Licença/License
 <a href="https://github.com/2025-2-MCC2/Projeto5">LEAD</a> © 2025 by <a href="https://creativecommons.org">Bruno Rodrigues Da Costa, Enzo Henrique Neves Sena, Harry Zhu, Murilo Angelo Pimentel Braggio, Vitor Paes Kolle  </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
