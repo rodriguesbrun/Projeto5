@@ -4,20 +4,16 @@
 <a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Nome do Projeto
+# Nome do Projeto: LEAD
 
-## Nome do Grupo
+## Integrantes: <a href="https://github.com/rodriguesbrun">Bruno Rodrigues</a>, <a href="https://github.com/Enzohenrique7">Enzo Henrique</a>, <a href="https://github.com/harryzuh">Harry Zuh</a>, <a href="https://github.com/Mura173">Murilo Ângelo</a>, <a href="https://github.com/vitorkolle">Vitor Kolle</a>
 
-## Integrantes: <a href=#>Bruno Rodrigues</a>, <a href="https://github.com/Enzohenrique7">Enzo Henrique</a>, <a href="https://github.com/harryzuh">Harry Zuh</a>, <a href="https://github.com/Mura173">Murilo Ângelo</a>, <a href="https://github.com/vitorkolle">Vitor Kolle</a>
-
-## Professores Orientadores: <a href=#>Francisco Escobar</a>, <a href=#>Cristina Machado</a>, <a href=#>Katia Bossi</a>, <a href=#>Leonardo Lugoboni</a>, <a href="https://www.linkedin.com/in/dolemes/">David Lemes</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>, <a href="https://www.linkedin.com/in/cristina-machado-corr%C3%AAa-leite-630309160/">Cristina Machado</a>, <a href="https://www.linkedin.com/in/katia-bossi/">Katia Bossi</a>, <a href="https://www.linkedin.com/in/leonardo-fabris-lugoboni-a3369416/">Leonardo Lugoboni</a>, <a href="https://www.linkedin.com/in/dolemes/">David Lemes</a>
 
 ## Descrição
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Este projeto foi desenvolvido com o objetivo de facilitar a colaboração entre alunos e mentores em iniciativas sociais voltadas para pessoas em situação de vulnerabilidade em conjunto com o projeto <a href="https://liderancasempaticas.com/">Lideranças Empáticas</a>. A plataforma permite que os participantes organizem e acompanhem contribuições, promovendo maior transparência, engajamento e impacto. Com uma interface intuitiva e recursos de gestão colaborativa, o sistema incentiva o aprendizado prático e o desenvolvimento de habilidades sociais e técnicas, enquanto promove o bem coletivo.
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
+Além de conectar quem deseja ajudar com quem precisa, o projeto também serve como uma ferramenta educacional, permitindo que mentores orientem alunos na aplicação de conhecimentos em contextos reais. Os dados das contribuições podem ser visualizados em tempo real, facilitando a análise de impacto e a tomada de decisões.
 <br><br>
 
 ## 🛠 Estrutura de pastas
