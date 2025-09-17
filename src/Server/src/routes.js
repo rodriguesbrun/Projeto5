@@ -2,24 +2,43 @@ import { Router } from 'express'
 import { pool } from './db.js'
 const r = Router()
 
-//health
+/**************************Testes******************************/
 r.get('/db/health', async (_, res) => {
     try {
         const [rows] = await pool.query('SELECT 1 AS db_ok')
         res.json({ ok: true, db: rows[0].db_ok })
-    } catch {
+    } catch(err) {
+        console.log(err);
+        
         res.status(500).json({ ok: false, db: 'down' })
     }
 })
-
-//exemplo get
+/****************************Usuários**********************************/
+//listar usuarios
 r.get('/users', async (_, res) => {
     try {
         const [rows] = await pool.query(
-            'SELECT id, name, email, created_at FROM users ORDER BY id DESC'
+            'select * from Usuario'
         )
         res.json(rows)
     } catch {
+        res.status(500).json({ error: 'Erro ao listar usuários' })
+    }
+})
+
+//logar usuario
+r.post('/user', async (req, res) => {
+    const {email, senha} = req.body
+
+    try {
+        const [rows] = await pool.query(
+            'select * from Usuario where email_usuario = ? and senha_usuario = ?',
+            [email, senha]
+        )
+        res.json(rows)
+    } catch(err) {
+        console.log(err);
+        
         res.status(500).json({ error: 'Erro ao listar usuários' })
     }
 })
