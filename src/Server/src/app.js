@@ -5,10 +5,10 @@ const app = express()
 
 app.use(express.json())
 
-//health check
+//teste conexão api
 app.get("/health", (_, response) => {
-    response.json({ok: true, server: 'up'})
-})  
+    response.json({ ok: true, server: 'up' })
+})
 
 // rotas da api
 app.use('/api', routes)
